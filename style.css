@@ -3,7 +3,7 @@
     transform: none;
   }
   100% {
-    transform: rotateX(3turn) rotateY(4turn);
+    transform: rotateX(4turn) rotateY(3turn);
   }
 }
 main {
@@ -13,8 +13,8 @@ main {
   place-items: center;
 
   transform-style: preserve-3d;
-  /* perspective: 50`em; */
-  animation: draaien 60s linear infinite;
+  /* perspective: 30em; */
+  animation: draaien 30s linear infinite;
 }
 
 ul {
@@ -134,6 +134,30 @@ ul:nth-of-type(20) {
 }
 
 /* Center pieces */
+
+ul:nth-of-type(21) {
+  transform: rotatex(0) rotatey(0) rotatez(0) translate3d(0, 0, var(--maat));
+}
+ul:nth-of-type(22) {
+  transform: rotatex(0.25turn) rotatey(0) rotatez(0)
+    translate3d(0, 0, var(--maat));
+}
+ul:nth-of-type(23) {
+  transform: rotatex(0.5turn) rotatey(0) rotatez(0)
+    translate3d(0, 0, var(--maat));
+}
+ul:nth-of-type(24) {
+  transform: rotatex(0.75turn) rotatey(0) rotatez(0)
+    translate3d(0, 0, var(--maat));
+}
+ul:nth-of-type(25) {
+  transform: rotatex(0) rotatey(0.25turn) rotatez(0)
+    translate3d(0, 0, var(--maat));
+}
+ul:nth-of-type(26) {
+  transform: rotatex(0) rotatey(0.75turn) rotatez(0)
+    translate3d(0, 0, var(--maat));
+}
 
 li {
   position: absolute;
