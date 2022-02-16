@@ -50,14 +50,14 @@ section {
 h1 {
   font-family: "Poppins";
   font-weight: 1000;
-  font-size: 25px;
+  font-size: calc(1.5vw + 1.5vh + 1.5vmin);
 }
 
 label {
   display: flex;
-  width: 5vw;
-  height: 5vh;
-  font-size: 18px;
+  width: calc(3vw + 3vmin);
+  height: calc(3vw + 3vmin);
+  font-size: calc(1.5vw + 1.5vh + 1.5vmin);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(255, 255, 255);
   font-weight: 400;
@@ -79,35 +79,35 @@ label:active {
   position: absolute;
   left: 0;
   top: 0;
-  width: 4.8vw;
-  height: 4.8vh;
+  width: calc(2.8vw + 2.8vmin);
+  height: calc(2.8vw + 2.8vmin);
   background-color: #4f78d6;
   color: white;
 }
 
 label:first-of-type {
   position: absolute;
-  top: 8%;
-  left: 8%;
+  top: calc(4.5vh + 4.5vmin);
+  left: calc(4.5vh + 4.5vmin);
 }
 label:nth-of-type(2) {
   position: absolute;
-  top: 15%;
-  left: 16%;
+  top: calc(9.5vh + 9.5vmin);
+  left: calc(9vh + 9vmin);
 }
 label:nth-of-type(3) {
   position: absolute;
-  top: 15%;
-  left: 8%;
+  top: calc(9.5vh + 9.5vmin);
+  left: calc(4.5vh + 4.5vmin);
 }
 label:nth-of-type(4) {
   position: absolute;
-  top: 15%;
+  top: calc(9.5vh + 9.5vmin);
 }
 
 label:last-of-type {
   position: absolute;
-  top: 8%;
+  top: calc(4.5vh + 4.5vmin);
   background-color: #b71234;
   color: white;
 }
