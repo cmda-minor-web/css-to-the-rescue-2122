@@ -1,12 +1,36 @@
-@keyframes draaien {
+@keyframes omhoog {
   0% {
     transform: none;
   }
   100% {
-    transform: rotateX(4turn) rotateY(3turn);
+    transform: rotateX(8turn) rotateY(0turn);
   }
 }
-main {
+@keyframes links {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateX(0turn) rotateY(-8turn);
+  }
+}
+@keyframes omlaag {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateX(-8turn) rotateY(0turn);
+  }
+}
+@keyframes rechts {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateX(0turn) rotateY(8turn);
+  }
+}
+section {
   height: 100vh;
 
   display: grid;
@@ -14,7 +38,72 @@ main {
 
   transform-style: preserve-3d;
   /* perspective: 30em; */
-  animation: draaien 30s linear infinite;
+  animation-play-state: paused;
+}
+
+main {
+  position: relative;
+}
+
+/* Buttons for rotation */
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+label {
+  display: flex;
+  width: 5vw;
+  height: 5vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #aaa;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #00000050;
+  justify-content: center;
+  align-items: center;
+}
+
+label:first-of-type {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+label:nth-of-type(2) {
+  position: absolute;
+  top: 15%;
+  left: 16%;
+}
+label:nth-of-type(3) {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+}
+label:last-of-type {
+  position: absolute;
+  top: 15%;
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: -1000em;
+}
+
+#up:checked ~ section {
+  animation-play-state: running;
+  animation: omhoog 100s linear infinite;
+}
+#right:checked ~ section {
+  animation-play-state: running;
+  animation: rechts 100s linear infinite;
+}
+#bottom:checked ~ section {
+  animation-play-state: running;
+  animation: omlaag 100s linear infinite;
+}
+#left:checked ~ section {
+  animation-play-state: running;
+  animation: links 100s linear infinite;
 }
 
 ul {
@@ -35,6 +124,13 @@ ul {
   transform-style: preserve-3d;
   transition: 0.5s;
 }
+
+/* Rotations test */
+
+/* main:hover ul:nth-of-type(3) {
+  transform: rotateX(0.5turn) rotateY(0.25turn) rotateZ(0turn)
+    translate3d(var(--maat), calc(var(--maat) * -1), var(--maat));
+} */
 
 /* Corner pieces */
 
@@ -138,6 +234,7 @@ ul:nth-of-type(20) {
 ul:nth-of-type(21) {
   transform: rotatex(0) rotatey(0) rotatez(0) translate3d(0, 0, var(--maat));
 }
+
 ul:nth-of-type(22) {
   transform: rotatex(0.25turn) rotatey(0) rotatez(0)
     translate3d(0, 0, var(--maat));
