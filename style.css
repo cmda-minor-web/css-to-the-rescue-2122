@@ -32,15 +32,8 @@ ul {
   animation-duration: 40s; */
 
   transform-style: preserve-3d;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
-
-/* Rotations test */
-
-/* main:hover ul:nth-of-type(3) {
-  transform: rotateX(0.5turn) rotateY(0.25turn) rotateZ(0turn)
-    translate3d(var(--maat), calc(var(--maat) * -1), var(--maat));
-} */
 
 /* Corner pieces */
 
