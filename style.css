@@ -1,35 +1,3 @@
-@keyframes omhoog {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: rotateX(8turn) rotateY(0turn);
-  }
-}
-@keyframes links {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: rotateX(0turn) rotateY(-8turn);
-  }
-}
-@keyframes omlaag {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: rotateX(-8turn) rotateY(0turn);
-  }
-}
-@keyframes rechts {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: rotateX(0turn) rotateY(8turn);
-  }
-}
 section {
   height: 100vh;
 
@@ -46,65 +14,7 @@ main {
 }
 
 /* Buttons for rotation */
-
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-label {
-  display: flex;
-  width: 5vw;
-  height: 5vh;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #aaa;
-  border: 2px solid #000;
-  border-radius: 5px;
-  box-shadow: 2px 2px 1px #00000050;
-  justify-content: center;
-  align-items: center;
-}
-
-label:first-of-type {
-  position: absolute;
-  top: 8%;
-  left: 8%;
-}
-label:nth-of-type(2) {
-  position: absolute;
-  top: 15%;
-  left: 16%;
-}
-label:nth-of-type(3) {
-  position: absolute;
-  top: 15%;
-  left: 8%;
-}
-label:last-of-type {
-  position: absolute;
-  top: 15%;
-}
-
-input[type="radio"] {
-  position: absolute;
-  left: -1000em;
-}
-
-#up:checked ~ section {
-  animation-play-state: running;
-  animation: omhoog 100s linear infinite;
-}
-#right:checked ~ section {
-  animation-play-state: running;
-  animation: rechts 100s linear infinite;
-}
-#bottom:checked ~ section {
-  animation-play-state: running;
-  animation: omlaag 100s linear infinite;
-}
-#left:checked ~ section {
-  animation-play-state: running;
-  animation: links 100s linear infinite;
-}
+/* See Buttons.css */
 
 ul {
   --maat: 6em;
