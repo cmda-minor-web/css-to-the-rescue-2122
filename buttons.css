@@ -145,6 +145,53 @@ label span:last-of-type {
   display: none;
 }
 
+/* Rotation hover */
+
+#right-bottom:hover ~ section ul:nth-child(-n + 9) {
+  --rY: 90deg;
+}
+#left-bottom:hover ~ section ul:nth-child(-n + 9) {
+  --rY: -90deg;
+}
+
+#right-middle:hover ~ section ul:nth-child(-n + 18):not(:nth-child(-n + 9)) {
+  --rY: 90deg;
+}
+#left-middle:hover ~ section ul:nth-child(-n + 18):not(:nth-child(-n + 9)) {
+  --rY: -90deg;
+}
+
+#right-top:hover ~ section ul:nth-child(-n + 27):not(:nth-child(-n + 18)) {
+  --rY: 90deg;
+}
+#left-top:hover ~ section ul:nth-child(-n + 27):not(:nth-child(-n + 18)) {
+  --rY: -90deg;
+}
+
+#up-right:hover ~ section ul:nth-child(3n) {
+  --rX: 90deg;
+}
+#down-right:hover ~ section ul:nth-child(3n) {
+  --rX: -90deg;
+}
+
+#up-left:hover ~ section ul:nth-child(3n + 1) {
+  --rX: 90deg;
+}
+#down-left:hover ~ section ul:nth-child(3n + 1) {
+  --rX: -90deg;
+}
+
+#up-middle:hover ~ section ul:nth-child(3n + 2) {
+  --rX: 90deg;
+}
+#down-middle:hover ~ section ul:nth-child(3n + 2) {
+  --rX: -90deg;
+}
+/* section:hover ul:nth-child(-n + 9):not(:nth-child(-n + 6)) {
+  --rZ: -90deg;
+} */
+
 /* Up */
 label:nth-of-type(6) {
   position: absolute;
@@ -199,7 +246,7 @@ label:nth-of-type(14) {
 /* Left */
 label:nth-of-type(15) {
   position: absolute;
-  top: calc(22vh + 22vmin);
+  top: calc(36vh + 36vmin);
   left: calc(6.5vw + 6.5vmin);
 }
 label:nth-of-type(16) {
@@ -209,6 +256,6 @@ label:nth-of-type(16) {
 }
 label:last-of-type {
   position: absolute;
-  top: calc(36vh + 36vmin);
+  top: calc(22vh + 22vmin);
   left: calc(6.5vw + 6.5vmin);
 }
