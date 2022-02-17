@@ -1,8 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 @keyframes omhoog {
   0% {
     transform: none;
@@ -55,9 +50,9 @@ h1 {
 
 label {
   display: flex;
-  width: calc(3vw + 3vmin);
-  height: calc(3vw + 3vmin);
-  font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+  width: calc(2vw + 2vmin);
+  height: calc(2vw + 2vmin);
+  font-size: calc(1vw + 1vh + 1vmin);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(255, 255, 255);
   font-weight: 400;
@@ -79,35 +74,35 @@ label:active {
   position: absolute;
   left: 0;
   top: 0;
-  width: calc(2.8vw + 2.8vmin);
-  height: calc(2.8vw + 2.8vmin);
+  width: calc(1.8vw + 1.8vmin);
+  height: calc(1.8vw + 1.8vmin);
   background-color: #4f78d6;
   color: white;
 }
 
 label:first-of-type {
   position: absolute;
-  top: calc(4.5vh + 4.5vmin);
-  left: calc(4.5vh + 4.5vmin);
+  top: calc(3.5vh + 3.5vmin);
+  left: calc(3.5vh + 3.5vmin);
 }
 label:nth-of-type(2) {
   position: absolute;
-  top: calc(9.5vh + 9.5vmin);
-  left: calc(9vh + 9vmin);
+  top: calc(6.5vh + 6.5vmin);
+  left: calc(7vh + 7vmin);
 }
 label:nth-of-type(3) {
   position: absolute;
-  top: calc(9.5vh + 9.5vmin);
-  left: calc(4.5vh + 4.5vmin);
+  top: calc(6.5vh + 6.5vmin);
+  left: calc(3.5vh + 3.5vmin);
 }
 label:nth-of-type(4) {
   position: absolute;
-  top: calc(9.5vh + 9.5vmin);
+  top: calc(6.5vh + 6.5vmin);
 }
 
-label:last-of-type {
+label:nth-of-type(5) {
   position: absolute;
-  top: calc(4.5vh + 4.5vmin);
+  top: calc(3.5vh + 3.5vmin);
   background-color: #b71234;
   color: white;
 }
@@ -148,4 +143,72 @@ label span:last-of-type {
 }
 #pause:checked ~ label span:first-of-type {
   display: none;
+}
+
+/* Up */
+label:nth-of-type(6) {
+  position: absolute;
+  top: calc(12vh + 12vmin);
+  left: calc(17.5vw + 17.5vmin);
+}
+label:nth-of-type(7) {
+  position: absolute;
+  top: calc(12vh + 12vmin);
+  left: calc(23.5vw + 23.5vmin);
+}
+label:nth-of-type(8) {
+  position: absolute;
+  top: calc(12vh + 12vmin);
+  left: calc(29.5vw + 29.5vmin);
+}
+
+/* Right */
+label:nth-of-type(9) {
+  position: absolute;
+  top: calc(22vh + 22vmin);
+  right: calc(6.5vw + 6.5vmin);
+}
+label:nth-of-type(10) {
+  position: absolute;
+  top: calc(28vh + 28vmin);
+  right: calc(6.5vw + 6.5vmin);
+}
+label:nth-of-type(11) {
+  position: absolute;
+  top: calc(36vh + 36vmin);
+  right: calc(6.5vw + 6.5vmin);
+}
+
+/* Down */
+label:nth-of-type(12) {
+  position: absolute;
+  bottom: calc(6.5vh + 6.5vmin);
+  left: calc(29.5vw + 29.5vmin);
+}
+label:nth-of-type(13) {
+  position: absolute;
+  bottom: calc(6.5vh + 6.5vmin);
+  left: calc(23.5vw + 23.5vmin);
+}
+label:nth-of-type(14) {
+  position: absolute;
+  bottom: calc(6.5vh + 6.5vmin);
+  left: calc(17.5vw + 17.5vmin);
+}
+
+/* Left */
+label:nth-of-type(15) {
+  position: absolute;
+  top: calc(22vh + 22vmin);
+  left: calc(6.5vw + 6.5vmin);
+}
+label:nth-of-type(16) {
+  position: absolute;
+  top: calc(28vh + 28vmin);
+  left: calc(6.5vw + 6.5vmin);
+}
+label:last-of-type {
+  position: absolute;
+  top: calc(36vh + 36vmin);
+  left: calc(6.5vw + 6.5vmin);
 }

@@ -5,11 +5,11 @@ section {
   place-items: center;
 
   transform-style: preserve-3d;
-  /* perspective: 60em; */
+  /* perspective: 100em; */
   animation-play-state: paused;
 }
 
-:root {
+:root * {
   --maat: 6em;
   --x1: calc(var(--maat) * 1);
   --x2: calc(var(--maat) * -1);
@@ -20,7 +20,7 @@ section {
   --z1: calc(var(--maat) * 1);
   --z2: calc(var(--maat) * -1);
   --z3: calc(var(--maat) * 0);
-  --transform: rotateX(0) rotateY(0) rotateZ(0);
+  --transform: rotateX(0) rotateY(var(--rY, 0deg)) rotateZ(0);
 }
 main {
   position: relative;
@@ -43,19 +43,16 @@ ul {
   animation-duration: 40s; */
 
   transform-style: preserve-3d;
-  /* transition: 0.5s; */
+  transition: 0.5s;
 }
 
 /* Rotation hover test */
-section:hover ul:nth-child(-n + 9) {
-  transform: rotateX(0turn) rotateY(0.25turn) rotateZ(0turn)
-    translate3d(var(--x3), var(--y2), var(--z1));
-}
 
-/* section:hover ul:first-of-type {
-  transform: rotateX(0turn) rotateY(0.25turn) rotateZ(0.25turn)
-    translate3d(var(--x3), var(--y2), var(--z1));
-} */
+/* rotation bottom layer */
+section:hover ul:nth-child(-n + 9) {
+  --rY: 90deg;
+}
+/* rotation top layer */
 
 /* Bottom Layer */
 
