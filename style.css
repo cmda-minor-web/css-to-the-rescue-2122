@@ -5,7 +5,7 @@ section {
   place-items: center;
 
   transform-style: preserve-3d;
-  /* perspective: 30em; */
+  /* perspective: 60em; */
   animation-play-state: paused;
 }
 
@@ -45,6 +45,17 @@ ul {
   transform-style: preserve-3d;
   /* transition: 0.5s; */
 }
+
+/* Rotation hover test */
+section:hover ul:nth-child(-n + 9) {
+  transform: rotateX(0turn) rotateY(0.25turn) rotateZ(0turn)
+    translate3d(var(--x3), var(--y2), var(--z1));
+}
+
+/* section:hover ul:first-of-type {
+  transform: rotateX(0turn) rotateY(0.25turn) rotateZ(0.25turn)
+    translate3d(var(--x3), var(--y2), var(--z1));
+} */
 
 /* Bottom Layer */
 
