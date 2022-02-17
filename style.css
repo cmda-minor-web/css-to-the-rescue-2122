@@ -9,6 +9,19 @@ section {
   animation-play-state: paused;
 }
 
+:root {
+  --maat: 6em;
+  --x1: calc(var(--maat) * 1);
+  --x2: calc(var(--maat) * -1);
+  --x3: calc(var(--maat) * 0);
+  --y1: calc(var(--maat) * 1);
+  --y2: calc(var(--maat) * -1);
+  --y3: calc(var(--maat) * 0);
+  --z1: calc(var(--maat) * 1);
+  --z2: calc(var(--maat) * -1);
+  --z3: calc(var(--maat) * 0);
+  --transform: rotateX(0) rotateY(0) rotateZ(0);
+}
 main {
   position: relative;
 }
@@ -17,8 +30,6 @@ main {
 /* See Buttons.css */
 
 ul {
-  --maat: 6em;
-
   position: absolute;
 
   margin: 0;
@@ -37,9 +48,89 @@ ul {
 
 /* Bottom Layer */
 
+ul:first-of-type {
+  transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z1));
+}
+ul:nth-of-type(2) {
+  transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z1));
+}
+ul:nth-of-type(3) {
+  transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z1));
+}
+ul:nth-of-type(4) {
+  transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z3));
+}
+ul:nth-of-type(5) {
+  transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z3));
+}
+ul:nth-of-type(6) {
+  transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z3));
+}
+ul:nth-of-type(7) {
+  transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z2));
+}
+ul:nth-of-type(8) {
+  transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z2));
+}
+ul:nth-of-type(9) {
+  transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z2));
+}
 /* Middle Layer */
 
+ul:nth-of-type(10) {
+  transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z1));
+}
+ul:nth-of-type(11) {
+  transform: var(--transform) translate3d(var(--x3), var(--y3), var(--z1));
+}
+ul:nth-of-type(12) {
+  transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z1));
+}
+ul:nth-of-type(13) {
+  transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z3));
+}
+ul:nth-of-type(14) {
+  transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z3));
+}
+ul:nth-of-type(15) {
+  transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z2));
+}
+ul:nth-of-type(16) {
+  transform: var(--transform) translate3d(var(--x3), var(--y3), var(--z2));
+}
+ul:nth-of-type(17) {
+  transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z2));
+}
+
 /* Top Layer */
+ul:nth-of-type(18) {
+  transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z1));
+}
+ul:nth-of-type(19) {
+  transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z1));
+}
+ul:nth-of-type(20) {
+  transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z1));
+}
+ul:nth-of-type(21) {
+  transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z3));
+}
+ul:nth-of-type(22) {
+  transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z3));
+}
+ul:nth-of-type(23) {
+  transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z3));
+}
+ul:nth-of-type(24) {
+  transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z2));
+}
+ul:nth-of-type(25) {
+  transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z2));
+}
+ul:last-of-type {
+  transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z2));
+}
+
 li {
   position: absolute;
   top: 0;
