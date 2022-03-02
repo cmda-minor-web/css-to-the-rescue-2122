@@ -3,7 +3,7 @@
     transform: none;
   }
   100% {
-    transform: rotateX(8turn) rotateY(0turn);
+    transform: rotateX(8turn) rotateY(0.3turn);
   }
 }
 @keyframes links {
@@ -11,7 +11,7 @@
     transform: none;
   }
   100% {
-    transform: rotateX(0turn) rotateY(-8turn);
+    transform: rotateX(-0.3turn) rotateY(-8turn);
   }
 }
 @keyframes omlaag {
@@ -19,7 +19,7 @@
     transform: none;
   }
   100% {
-    transform: rotateX(-8turn) rotateY(0turn);
+    transform: rotateX(-8turn) rotateY(-0.3turn);
   }
 }
 @keyframes rechts {
@@ -27,7 +27,7 @@
     transform: none;
   }
   100% {
-    transform: rotateX(0turn) rotateY(8turn);
+    transform: rotateX(0.3turn) rotateY(8turn);
   }
 }
 
@@ -72,8 +72,6 @@ label:active {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 0;
-  top: 0;
   width: calc(1.8vw + 1.8vmin);
   height: calc(1.8vw + 1.8vmin);
   background-color: #4f78d6;
@@ -217,7 +215,7 @@ label:nth-of-type(9) {
 }
 label:nth-of-type(10) {
   position: absolute;
-  top: calc(28vh + 28vmin);
+  top: calc(29vh + 29vmin);
   right: calc(6.5vw + 6.5vmin);
 }
 label:nth-of-type(11) {
@@ -251,7 +249,7 @@ label:nth-of-type(15) {
 }
 label:nth-of-type(16) {
   position: absolute;
-  top: calc(28vh + 28vmin);
+  top: calc(29vh + 29vmin);
   left: calc(6.5vw + 6.5vmin);
 }
 label:last-of-type {
