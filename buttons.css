@@ -179,9 +179,8 @@ label span:last-of-type {
 }
 
 /* Texture toggle mode */
-#texture:checked ~ li ::before {
+#texture:checked ~ section ul li::before {
   --texture: none;
-  /* --textureIconOff */
 }
 
 #texture:checked ~ label:last-of-type span:nth-of-type(2) {
@@ -318,6 +317,52 @@ label:last-of-type {
   position: absolute;
   top: calc(3.5vh + 3.5vmin);
   color: var(--textureIconColor);
-  background-color: var(--textureIcon);
+  background-color: var(--textureIconOn);
   right: calc(5vw + 5vmin);
+}
+
+input[type="color"] {
+  display: flex;
+  width: calc(3vw + 3vmin);
+  height: calc(3vw + 3vmin);
+  /* font-size: calc(1vw + 1vh + 1vmin); */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #00000050;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#left-face {
+  position: absolute;
+  left: 40%;
+  top: 7.5%;
+}
+#front-face {
+  position: absolute;
+  left: 47%;
+  top: 7.5%;
+}
+#right-face {
+  position: absolute;
+  left: 54%;
+  top: 7.5%;
+}
+#back-face {
+  position: absolute;
+  left: 61%;
+  top: 7.5%;
+}
+#top-face {
+  position: absolute;
+  left: 47%;
+  top: 1%;
+}
+#bottom-face {
+  position: absolute;
+  left: 47%;
+  top: 14%;
 }
