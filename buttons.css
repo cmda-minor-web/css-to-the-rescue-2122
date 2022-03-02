@@ -42,10 +42,21 @@ section {
   animation-play-state: paused;
 }
 
-h1 {
+main h1:first-of-type {
   font-family: "Poppins";
   font-weight: 1000;
   font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+  color: var(--textColor);
+}
+
+main h1:last-of-type {
+  font-family: "Poppins";
+  font-weight: 1000;
+  font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+  color: var(--textColor);
+  position: absolute;
+  right: 2rem;
+  top: -1.5rem;
 }
 
 label {
@@ -54,18 +65,20 @@ label {
   height: calc(2vw + 2vmin);
   font-size: calc(1vw + 1vh + 1vmin);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
   font-weight: 400;
-  border: 2.5px solid #000;
+  border: 2.5px solid var(--border);
   border-radius: 5px;
   box-shadow: 2px 2px 1px #00000050;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 label:hover {
   background-color: #9aafe0;
-  color: white;
+  color: var(--backgroundColor);
 }
 label:active {
   display: flex;
@@ -136,10 +149,45 @@ input[type="checkbox"] {
 label span:last-of-type {
   display: none;
 }
-#pause:checked ~ label span:last-of-type {
+#pause:checked ~ label:nth-of-type(5) span:nth-of-type(2) {
   display: inline;
 }
-#pause:checked ~ label span:first-of-type {
+#pause:checked ~ label:nth-of-type(5) span:first-of-type {
+  display: none;
+}
+
+/* Dark mode toggle */
+#mode:checked ~ *,
+#mode:checked ~ * * {
+  --rubiksColor: white;
+  --backgroundColor: rgb(30, 30, 30);
+  --textColor: white;
+  --border: white;
+  --modeIcon: #4e386f;
+  --modeIconColor: #bae;
+  --textureIconOn: #00948b;
+  --textureIconOff: #940000;
+
+  --textureIconColor: white;
+}
+
+#mode:checked ~ main label:nth-of-type(18) span:nth-of-type(2) {
+  display: inline;
+}
+#mode:checked ~ main label:nth-of-type(18) span:first-of-type {
+  display: none;
+}
+
+/* Texture toggle mode */
+#texture:checked ~ li ::before {
+  --texture: none;
+  /* --textureIconOff */
+}
+
+#texture:checked ~ label:last-of-type span:nth-of-type(2) {
+  display: inline;
+}
+#texture:checked ~ label:last-of-type span:first-of-type {
   display: none;
 }
 
@@ -252,8 +300,24 @@ label:nth-of-type(16) {
   top: calc(29vh + 29vmin);
   left: calc(6.5vw + 6.5vmin);
 }
-label:last-of-type {
+label:nth-of-type(17) {
   position: absolute;
   top: calc(22vh + 22vmin);
   left: calc(6.5vw + 6.5vmin);
+}
+
+/* Legenda */
+label:nth-of-type(18) {
+  position: absolute;
+  top: calc(3.5vh + 3.5vmin);
+  color: var(--modeIconColor);
+  background-color: var(--modeIcon);
+  right: calc(2vw + 2vmin);
+}
+label:last-of-type {
+  position: absolute;
+  top: calc(3.5vh + 3.5vmin);
+  color: var(--textureIconColor);
+  background-color: var(--textureIcon);
+  right: calc(5vw + 5vmin);
 }
