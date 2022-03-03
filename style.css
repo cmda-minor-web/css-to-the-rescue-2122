@@ -10,7 +10,7 @@ section {
 }
 
 :root * {
-  --maat: 6em;
+  --maat: 13vmin;
   --x1: calc(var(--maat) * 1);
   --x2: calc(var(--maat) * -1);
   --x3: calc(var(--maat) * 0);
