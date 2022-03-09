@@ -91,27 +91,27 @@ label:active {
   color: white;
 }
 
-label:first-of-type {
+main > label:first-of-type {
   position: absolute;
   top: calc(3.5vh + 3.5vmin);
   left: calc(3.5vh + 3.5vmin);
 }
-label:nth-of-type(2) {
+main > label:nth-of-type(2) {
   position: absolute;
   top: calc(6.5vh + 6.5vmin);
   left: calc(7vh + 7vmin);
 }
-label:nth-of-type(3) {
+main > label:nth-of-type(3) {
   position: absolute;
   top: calc(6.5vh + 6.5vmin);
   left: calc(3.5vh + 3.5vmin);
 }
-label:nth-of-type(4) {
+main > label:nth-of-type(4) {
   position: absolute;
   top: calc(6.5vh + 6.5vmin);
 }
 
-label:nth-of-type(5) {
+main > label:nth-of-type(5) {
   position: absolute;
   top: calc(3.5vh + 3.5vmin);
   background-color: #b71234;
@@ -238,6 +238,58 @@ label span:last-of-type {
 } */
 
 /* Up */
+main section:last-of-type {
+  display: grid;
+  /* place-items: center; */
+  top: 20vmin;
+  left: 15vmin;
+  width: 80vmin;
+
+  height: 80vmin;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+main section:nth-of-type(2) label:first-of-type {
+  grid-area: 1 / 2 / 2 / 3;
+}
+main section:nth-of-type(2) label:nth-of-type(2) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+main section:nth-of-type(2) label:nth-of-type(3) {
+  grid-area: 1 / 4 / 2 / 5;
+}
+main section:nth-of-type(2) label:nth-of-type(4) {
+  grid-area: 2 / 5 / 3 / 6;
+}
+main section:nth-of-type(2) label:nth-of-type(5) {
+  grid-area: 3 / 5 / 4 / 6;
+}
+main section:nth-of-type(2) label:nth-of-type(6) {
+  grid-area: 4 / 5 / 5 / 6;
+}
+main section:nth-of-type(2) label:nth-of-type(7) {
+  grid-area: 5 / 4 / 6 / 5;
+}
+main section:nth-of-type(2) label:nth-of-type(8) {
+  grid-area: 5 / 3 / 6 / 4;
+}
+main section:nth-of-type(2) label:nth-of-type(9) {
+  grid-area: 5 / 2 / 6 / 3;
+}
+main section:nth-of-type(2) label:nth-of-type(10) {
+  grid-area: 4 / 1 / 5 / 2;
+}
+main section:nth-of-type(2) label:nth-of-type(11) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+main section:nth-of-type(2) label:nth-of-type(12) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+/*
 label:nth-of-type(6) {
   position: absolute;
   top: calc(12vh + 12vmin);
@@ -254,7 +306,7 @@ label:nth-of-type(8) {
   left: calc(29.5vw + 29.5vmin);
 }
 
-/* Right */
+Right
 label:nth-of-type(9) {
   position: absolute;
   top: calc(22vh + 22vmin);
@@ -271,7 +323,7 @@ label:nth-of-type(11) {
   right: calc(6.5vw + 6.5vmin);
 }
 
-/* Down */
+Down
 label:nth-of-type(12) {
   position: absolute;
   bottom: calc(6.5vh + 6.5vmin);
@@ -288,7 +340,7 @@ label:nth-of-type(14) {
   left: calc(17.5vw + 17.5vmin);
 }
 
-/* Left */
+Left
 label:nth-of-type(15) {
   position: absolute;
   top: calc(36vh + 36vmin);
@@ -303,17 +355,17 @@ label:nth-of-type(17) {
   position: absolute;
   top: calc(22vh + 22vmin);
   left: calc(6.5vw + 6.5vmin);
-}
+} */
 
 /* Legenda */
-label:nth-of-type(18) {
+main > label:nth-of-type(6) {
   position: absolute;
   top: calc(3.5vh + 3.5vmin);
   color: var(--modeIconColor);
   background-color: var(--modeIcon);
   right: calc(2vw + 2vmin);
 }
-label:last-of-type {
+main > label:last-of-type {
   position: absolute;
   top: calc(3.5vh + 3.5vmin);
   color: var(--textureIconColor);
