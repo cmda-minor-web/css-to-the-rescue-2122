@@ -19,7 +19,6 @@ It didn't quite work out too well and at the end of day 1 i had 6 list items tha
 **Day 2**  
 Day 2 went a lot better, I managed to get a cube shape and copied them to make 3. I gave it a styling and called it a day. I also calculated how many turns i would need to have each side be at least turned once.
 ![image cube day 2](https://github.com/ppijn/rubiks-cube/blob/Rubiks-Cube-version-4-day-1/rubikscube/img/cubeday2.HEIC)
-<img src="img/cubeday2.HEIC" alt="image cube day 2" width="150px"/>
 Now the next challenge was bigger. Create 26 cubes and position them correctly...
 
 ```
