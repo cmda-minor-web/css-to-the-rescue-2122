@@ -17,11 +17,16 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="buttons.css" />
     <title>Rubiks Cube</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
   </head>
   <body>
     <input type="checkbox" id="mode" />
-    <main>
+    <header>
       <h1>Rotate Cube:</h1>
+      <h1>Legend:</h1>
+    </header>
+    <main>
+      <!-- <h1>Rotate Cube:</h1> -->
       <input type="radio" id="up" name="controls" />
       <input type="radio" id="right" name="controls" />
       <input type="radio" id="bottom" name="controls" />
@@ -30,15 +35,16 @@
       <input type="checkbox" id="texture" />
 
       <!-- Color picking for sides -->
-
-      <label for="up"><i class="fa fa-arrow-up"></i> </label>
-      <label for="right"><i class="fa fa-arrow-right"></i></label>
-      <label for="bottom"><i class="fa fa-arrow-down"></i></label>
-      <label for="left"><i class="fa fa-arrow-left"></i> </label>
-      <label for="pause">
-        <span><i class="fa fa-pause"></i></span>
-        <span><i class="fa fa-play"></i></span>
-      </label>
+      <aside>
+        <label for="up"><i class="fa fa-arrow-up"></i> </label>
+        <label for="right"><i class="fa fa-arrow-right"></i></label>
+        <label for="bottom"><i class="fa fa-arrow-down"></i></label>
+        <label for="left"><i class="fa fa-arrow-left"></i> </label>
+        <label for="pause">
+          <span><i class="fa fa-pause"></i></span>
+          <span><i class="fa fa-play"></i></span>
+        </label>
+      </aside>
 
       <!-- Rotation buttons -->
       <input type="radio" id="up-left" name="up" />
@@ -55,550 +61,6 @@
       <input type="radio" id="left-top" name="left" />
 
       <!-- Legenda styling -->
-      <h1>Legend</h1>
-      <section>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube1" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="color" id="left-face" name="cube" value="#009b48" />
-          </li>
-          <li>
-            <input type="color" id="front-face" name="cube" value="#b71234" />
-          </li>
-          <li>
-            <input type="color" id="right-face" name="cube" value="#0046ad" />
-          </li>
-          <li>
-            <input type="color" id="back-face" name="cube" value="#ff5800" />
-          </li>
-          <li>
-            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
-          </li>
-          <li>
-            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
-          </li>
-        </ul>
-      </section>
-
       <section>
         <!-- Arrows for rotation up -->
         <label for="up-left"><i class="fa fa-arrow-up"></i></label>
@@ -617,15 +79,559 @@
         <label for="left-middle"><i class="fa fa-arrow-left"></i> </label>
         <label for="left-top"><i class="fa fa-arrow-left"></i> </label>
       </section>
+      <section>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube1" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="color" id="left-face" name="cube" value="#009b48" />
+          </li>
+          <li>
+            <input type="color" id="front-face" name="cube" value="#b71234" />
+          </li>
+          <li>
+            <input type="color" id="right-face" name="cube" value="#0046ad" />
+          </li>
+          <li>
+            <input type="color" id="back-face" name="cube" value="#ff5800" />
+          </li>
+          <li>
+            <input type="color" id="top-face" name="cube" value="#f1f1f1" />
+          </li>
+          <li>
+            <input type="color" id="bottom-face" name="cube" value="#ffd500" />
+          </li>
+        </ul>
+      </section>
       <!-- Legenda -->
-      <label for="mode">
-        <span><i class="fa fa-sun-o"></i></span>
-        <span><i class="fa fa-moon-o"></i></span>
-      </label>
-      <label for="texture">
-        <span><i class="fa fa-check"></i></span>
-        <span><i class="fa fa-close"></i></span>
-      </label>
+      <section>
+        <label for="mode">
+          <span><i class="fa fa-sun-o"></i></span>
+          <span><i class="fa fa-moon-o"></i></span>
+        </label>
+        <label for="texture">
+          <span><i class="fa fa-check"></i></span>
+          <span><i class="fa fa-close"></i></span>
+        </label>
+      </section>
     </main>
   </body>
 </html>
