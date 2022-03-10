@@ -160,14 +160,13 @@ label span:last-of-type {
   --modeIconColor: #bae;
   --textureIconOn: #00948b;
   --textureIconOff: #940000;
-
   --textureIconColor: white;
 }
 
-#mode:checked ~ main label:nth-of-type(1) span:nth-of-type(2) {
+#mode:checked ~ main label:first-of-type span:nth-of-type(2) {
   display: inline;
 }
-#mode:checked ~ main label:nth-of-type(1) span:first-of-type {
+#mode:checked ~ main label:first-of-type span:first-of-type {
   display: none;
 }
 
@@ -176,10 +175,10 @@ label span:last-of-type {
   --texture: none;
 }
 
-#texture:checked ~ main label:nth-of-type(2) span:nth-of-type(2) {
+#texture:checked ~ section label:last-of-type span:nth-of-type(2) {
   display: inline;
 }
-#texture:checked ~ main label:nth-of-type(2) span:first-of-type {
+#texture:checked ~ section label:last-of-type span:first-of-type {
   display: none;
 }
 
