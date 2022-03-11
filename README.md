@@ -56,7 +56,7 @@ Some insights:
 In week 2 day 2, I picked up were i left with the cubes, I still needed to do the center pieces of the cubes. I managed to put the cubes in the center pieces and when i had that, I wanted to add the 'Rotate Cube' funciton with some sort of interface for the rotations. In the picture you can see both the filled in cube and the labels for the rotations using input type: radiobox.
 At the end of the day, because i wasn't doing the positioning correctly, I had 4 double blocks in my cube... It was extremely challenging for me to find these double cubes. I wrote them down and managed to find the double cubes after 2 hours.
 
-![Double cubes](https://github.com/ppijn/rubiks-cube/blob/Rubiks-Cube-version-4-day-1/rubikscube/img/doublecube.jpg)
+![Double cubes](https://github.com/ppijn/rubiks-cube/blob/Rubiks-Cube-version-4-day-1/rubikscube/img/dubblecube.jpg)
 
 ```
 Some challenges this day:
